@@ -493,6 +493,58 @@ p{
             opacity: 1;
             transform: translateY(0);
      }
+      .contact-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.contact-card{
+    width:180px;
+    padding:25px;
+    background:linear-gradient(135deg,#00d4ff,#2563eb);
+    border-radius:25px;
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact-card i{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.contact-card span{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,212,255,0.5);
+}
+
+@media(max-width:768px){
+
+nav ul{
+    display:none;
+}
+
+.hero-content h1{
+    font-size:55px;
+}
+
+.project-card h3{
+    font-size:32px;
+}
+
+}  
    </style>
 </head>
 
