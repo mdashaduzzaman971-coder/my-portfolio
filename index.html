@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD Ashaduzzaman - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
     <style>
+    #theme-toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #00d4ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
 
+.light-mode{
+    background: white;
+    color: black;
+}
 .project-card{
     background: #1e293b;
     padding: 20px;
@@ -30,6 +46,33 @@
     to{
         opacity: 1;
         transform: translateY(0);
+    }
+    @media (max-width: 768px){
+
+    .nav-links{
+        display: none;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+
+    .project-card{
+        margin: 15px;
+    }
+
+    .cta-button{
+        width: 100%;
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
     }
 }
 #projects{
