@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD Ashaduzzaman - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
     #theme-toggle{
@@ -379,38 +380,42 @@ p{
     font-size: 22px;
     line-height: 1.8;
 }
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
+        .contact-container{
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   flex-wrap: wrap;
+   margin-top: 40px;
+}
 
-        .contact-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: #e2e8f0;
-            text-decoration: none;
-            padding: 1.5rem;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(0, 212, 255, 0.2);
-        }
+.contact-card{
+   width: 220px;
+   padding: 25px;
+   background: #111;
+   border-radius: 25px;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   transition: 0.3s;
+   border: 2px solid #00d4ff;
+}
 
-        .contact-link:hover {
-            background: rgba(0, 212, 255, 0.1);
-            transform: translateY(-5px);
-            border-color: #00d4ff;
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
-        }
+.contact-card i{
+   font-size: 45px;
+   margin-bottom: 15px;
+   color: #00d4ff;
+}
 
-        .contact-link i {
-            font-size: 2rem;
-            color: #00d4ff;
-      }
+.contact-card span{
+   display: block;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.contact-card:hover{
+   transform: translateY(-8px);
+   box-shadow: 0 10px 25px #00d4ff;
+}
 
         /* Footer */
         footer {
@@ -674,4 +679,52 @@ toggleBtn.addEventListener("click", () => {
             observer.observe(el);
         });
     </script>
+    <section id="contact" class="fade-in">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <a href="mailto:youremail@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+
+        <a href="https://linkedin.com" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+    </div>
+
+    </section>
+    <section id="contact" class="fade-in">
+
+   <h2 class="section-title">Contact Me</h2>
+
+   <div class="contact-container">
+
+      <a href="mailto:youremail@gmail.com" class="contact-card">
+         <i class="fas fa-envelope"></i>
+         <span>Email</span>
+      </a>
+
+      <a href="https://linkedin.com" class="contact-card">
+         <i class="fab fa-linkedin"></i>
+         <span>LinkedIn</span>
+      </a>
+
+      <a href="https://github.com" class="contact-card">
+         <i class="fab fa-github"></i>
+         <span>GitHub</span>
+      </a>
+
+   </div>
+
+    </section>
                         </body>
