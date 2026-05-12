@@ -208,8 +208,10 @@
         }
 
         .hero-content h1 {
+line-height: 1.1;
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1rem;
+            margin-top: 20px;
             background: linear-gradient(45deg, #ffffff, #00d4ff, #7b2cbf);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -224,7 +226,9 @@
             opacity: 0.9;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
-
+         .hero-content {
+    padding-top: 80px;
+         }
         .cta-button {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -232,6 +236,9 @@
             color: white;
             text-decoration: none;
             border-radius: 50px;
+            letter-spacing: 1px;
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.2);
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s ease;
@@ -244,6 +251,7 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+            scale: 1.05;
         }
 
         .cta-button::before {
